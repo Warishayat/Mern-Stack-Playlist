@@ -1,2 +1,1 @@
-# Mern-Stack-Playlist
-🚀 MERN Stack Mastery Playlist: From basics to advanced! Covers HTML, CSS, Tailwind, JavaScript, React, Next.js, Node.js, Express, MongoDB &amp; more with the pdf notes. Perfect for beginners &amp; pros aiming to build full-stack apps. Start your dev journey here! 🌐💻📚
+🚀 MERN Stack Mastery (3-Month Course): Learn full-stack dev from scratch! Covers HTML, CSS, Tailwind, JS, React, Next.js, Node.js, Express, MongoDB & more. Daily notes + code updates. Go from beginner to pro in 3 months! 🌐💻📘
