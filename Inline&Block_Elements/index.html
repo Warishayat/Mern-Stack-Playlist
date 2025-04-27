@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- let start from emmets p>img inside paragraoh there will be a imag -->
+
+    <p><img src="" alt=""></p>
+
+    <!-- i want 4 paragraph if: -->
+    <!-- <p>
+        Hello i am paragraph.
+    <p>
+        Hello i am also a nested paragraph.
+
+    <p>Hello ia m most nested paragraph</p>
+    </p>
+    </p> -->
+
+    <!-- suppose i want to insert paragraph tag inside the heading h1>p -->
+    <h1>
+        <p
+        >Hello i am paragraph.
+        </p>
+    </h1>
+
+    <!-- suppose i want combine tag artical ans section or paragraph and h1  h1+p or artical+section these tag act as a sibling if use +-->
+    <h1>Hello i am working <code>h1+p</code></h1>
+    <p>Hello i am working <code>h1+p</code></p>
+
+    <artical>Hello i am artical <code style="color: red; background-color: aqua;">artical+section</code></artical>
+    <section>Hello i am section <code style="color: red; background-color: aqua;">artical_section</code></section>
+
+    <!-- suppose i want to insert the content in to the paragraph. p{hello ia m driectly inserted the conetent into the para} -->
+    <h1 id="lovewaris">Render me over here love waris</h1>
+    <p >this is love waris</p>
+    <artical>hello i am writing this artical from direct methid</artical>
+    <h3>this is content from h3 heading</h3>
+    <h1>my name is waris and ia m learning this from love babbar</h1>
+
+    <p><a href="">this is love waris</a></p>
+
+    <!-- lets suppose we are using class and id attribute that are very important in this section -->
+    <div id="ZEBRA">Hello ji this is zebra it has only one breed there is no breed of it.so i am going to use id</div>
+    <div class="dog">Hello i am husky</div>
+    <div class="dog">Hello i am bully dog</div>
+    <div class="dog">Hello i am rootwheeler dog</div>
+
+
+    <!-- suppose i want a table with 4 rows and 5 data columns inside that. what will be emmet try it yourself-->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- Understand  now sibling tags like section + artical-->
+    <section class="section">This is section </section>
+    <artical class="artical">This is artical that i can show you over there.</artical>
+
+    <!-- lets do it with anchor example -->
+    <a href="www.google.com">click me i am rerender you on the google</a>
+    <br>
+    <img src="gandhi.png" alt="gandhi je picture with quaid e azam muhmmad ali jinnah" class="gandhiImgae">
+
+    <!-- lets make the nest tags with emmets p>img>h1{this picture belong to muhhamd ali jinnah } -->
+    <p>
+        <img src="" alt="">
+            <h1>this picture belong to muhmmad ali jinnah</h1>
+        </img>
+    </p>
+    <!-- lets make the nested list items -->
+    <ol style="border: 1px solid red;">
+        <li>
+            <ol>1</ol>
+            <ol>2</ol>
+        </li>
+        <li>
+            <ol>3</ol>
+            <ol>4</ol>
+        </li>
+    </ol>
+    <p>this is para</p>
+    <section>this is section
+        <p>
+            <p>
+                <p></p>
+            </p>
+        </p>
+    </section>
+
+    <table style="border:1px solid black">
+        <tr >
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+    <!-- now discuss the div tag its non semantic tag it for creating division it is used for wrapping. -->
+
+    <!-- lets take the example of div -->
+    <div class="container" >
+        <h1 class="headnig1">this is my first heading</h1>
+    </div>
+
+    <!-- is div is block or inline element. -->
+     <div class="cotainer1" style="background-color: red;">This is block tag</div>
+     <div class="cotainer1" style="background-color: green;">This is block tag 2</div>
+     <span style="background-color: yellow;"> this is inline tag</span>
+     <span style="background-color: purple;"> this is inline tag 2</span>
+
+     <pre>
+        this is waris
+                    from google usa.
+                                    working as a AI Enginner.
+     </pre>
+     <!-- Can we convert the block tag into inline element we can do this just through css display:inline or inline-blocks-->
+    <span>
+        <p >i am para1 from bloc tag</p> 
+    </span>
+
+    <!-- lets go for last topic. huh its again list -->
+     <ol>
+        <li>
+            <p><a href=""></a></p>
+        </li>
+        <li>
+            <p><a href=""></a></p>
+        </li>
+        <li>
+            <p><a href=""></a></p>
+        </li>
+        <li>
+            <p><a href=""></a></p>
+        </li>
+        <li>
+            <p><a href=""></a></p>
+        </li>
+        <li>
+            <p><a href=""></a></p>
+        </li>
+        <li>
+            <p><a href=""></a></p>
+        </li>
+     </ol>
+
+     <!-- make and there should be three anchor tag like home contanct about us login -->
+    <nav>
+        <ol  style="display: flex; align-items: end; justify-content:space-evenly; list-style: none;">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About Us</li>
+            <li>Login</li>
+        </ol>
+    </nav>
+
+    <!-- lets create hyper link jump from one section to another section-->
+     <a href="http://www.google.com">Google me</a>
+     <a href="#lovewaris">click me to rerender on the love waris</a>
+
+
+     <!-- lets nail and phone -->
+    <a href="mailto:warishayat666@gmail.com">Mail us at:</a>
+    <a href="tel:+923194758420">call us at:</a>
+</body>
+</html>
