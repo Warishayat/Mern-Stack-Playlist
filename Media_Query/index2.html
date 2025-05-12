@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        border:1px solid black;
+        background-color: aqua;
+        flex-direction: row;
+    }
+    .leftBox{
+        background-color: aquamarine;
+        border:1px solid blue;
+        width: 47%;
+        margin: 3px;
+        padding: 2px;
+    }
+    .RightBox{
+        background-color: beige;
+        border:1px solid blue;
+        width: 47%;
+        margin: 3px;
+        padding: 2px;
+    }
+    p{
+        border:1px solid black
+    }
+    @media screen and (max-width:600px){
+        .container{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="leftBox">
+            <p>Text-1</p>
+            <p>Text-2</p>
+        </div>
+        <div class="RightBox">
+            <img src="hnager.jfif" alt="hanger img" width="200px" height="150px">
+        </div>
+    </div>
+</body>
+</html>
