@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* we can define custom variable and use in the whole code*/
+    root{
+        --primary-color:red;
+        --custom-width:500px;
+        --custom-height:500px;
+    }
+    .container{
+        border: 3px solid rgb(167, 167, 63);
+        width:1000px;
+        height:100vh;;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .box{
+        width:50%;
+        height:50%;
+        margin:10px;
+        padding:10px;
+        border:2px solid black;
+        box-shadow:inset  10px 16px 11px  3px brown;
+        display: flex;
+        box-sizing: border box;
+        flex-direction: column;
+    } */
+    
+    .box{
+        --primary-color:grey;
+        width:50%;
+        height:50%;
+        margin:10px;
+        padding:10px;
+        border:2px solid black;
+        /* box-shadow:  10px 16px 11px  3px brown; */
+        box-shadow:  10px 15px 10px var(--primary-color),15px 20px 16px purple;
+        display: flex;
+        box-sizing: border box;
+        flex-direction: column;
+    }
+    img{
+        align-self: center;
+        padding-top:10px
+    }
+    h2{
+        align-self:center;
+        text-shadow: 4px 6px 7px grey;
+    }
+    p{
+        align-self: center;
+    }
+</style>
+<body>
+    <div class="container">
+        
+        <div class="box">
+            <img src="R.jfif" alt="Simple image" width="200px" height="150px">
+            <h2>Mern Stack - Course</h2>
+            <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti sit neque id. Id nam error similique impedit perspiciatis, minus accusantium est labore porro rerum. Porro delectus excepturi quisquam vitae!</p>
+        </div>
+    </div>
+</body>
+</html>
