@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Fix</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: bisque;
+            border: 2px solid red;
+        }
+        .box {
+            width: 550px;
+            height: 400px;
+            background-color: purple;
+            border-radius: 10px;
+            color: whitesmoke;
+            margin: 10px;
+            padding: 5px;
+            border: 2px solid black;
+            position: relative;
+            animation-name: right_movement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction:alternate;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes right_movement {
+            from {
+                left: 0;
+            }
+            to {
+                left: 700px;
+            }
+        }
+
+        #box2{
+            width: 550px;
+            height: 400px;
+            background-color: purple;
+            border-radius: 10px;
+            color: whitesmoke;
+            margin: 10px;
+            padding: 5px;
+            border: 2px solid black;
+            animation-name: left_movement;
+            position: relative;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: ease-in;
+            animation-direction:alternate;
+            animation-fill-mode: forwards;
+        }
+        @keyframes left_movement {
+            from {
+                top: 680px;
+                left: 800px;
+            }
+            to {
+                top: 680px;
+                left: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is Waris
+        </div>
+        <div id="box2">
+            this is box2
+        </div>
+    </div>
+</body>
+</html>
