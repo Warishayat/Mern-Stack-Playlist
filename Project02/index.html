@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodWithFoodt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background: #59C173;
+            background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+            background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .navcontainer {
+            margin-top: 8px;
+            padding: 3px;
+            line-height: 35px;
+            background: #642B73;
+            background: -webkit-linear-gradient(to right, #C6426E, #642B73);
+            background: linear-gradient(to right, #C6426E, #642B73);
+
+        }
+
+        #navlist {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            transition: all 0.1s linear;
+        }
+
+        /* .nav-links:hover {
+            transform: scale(1.01);
+        } */
+        
+
+        #navlist a {
+            text-decoration: none;
+            color: beige;
+            font-size: 1.5rem;
+            padding-right: 30px;
+            cursor: pointer;
+            transition: all 1s linear;
+        }
+        #navlist a:hover {
+            transform: scale(1.1);
+            color: antiquewhite;
+        }
+
+        .logo p {
+            color: beige;
+            cursor: pointer;
+        }
+
+        .footer {
+            display: flex;
+            margin-top: 8px;
+            padding: 3px;
+            line-height: 35px;
+            background: #642B73;
+            background: -webkit-linear-gradient(to right, #C6426E, #642B73);
+            background: linear-gradient(to right, #C6426E, #642B73);
+            justify-content: center;
+            align-items: center;
+            color: beige;
+            min-height: 50px;
+            font-size: 1.2em;
+        }
+        .contentBox{
+            width: 70%;
+            background-color:beige;
+            margin: auto;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin-top: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        .mainBox{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            /* margin: 10px; */
+        }
+        .leftBox{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-top:10px ;
+        }
+        .leftBox h2{
+            text-align: center;
+        }
+        .leftBox ul{
+            list-style: none;
+            text-align: center;
+        }
+        .leftBox p{
+            align-content: center;
+        }
+        .rightBox img{
+           width: 250px;
+           height: 200px;
+            border-radius: 5px;
+            transition: all 0.5s linear;
+        }
+        .rightBox img:hover{
+          transform: scale(1.1);
+        }
+
+        @media screen and (max-width:550px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            #navlist {
+                justify-content: center;
+            }
+
+            .mainBox{
+                flex-direction: column;
+            }
+            .leftBox p{
+                align-items: center;
+            }
+            .rightBox img{
+                width: 120px;
+                height:100px;
+                align-content: center;
+            }
+            .rightBox img:hover{
+          transform: scale(1.01);
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navlist">
+                        <li class="logo">
+                            <p>FoodWithFoody</p>
+                        </li>
+                        <li class="nav-links">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="contentBox">
+                <!-- items -->
+                <section class="mainBox">
+                    <div class="leftBox">
+                        <h2>Thalli</h2>
+                        <ul>
+                            <li>Chiken</li>
+                            <li>Chapati</li>
+                            <li>Vagetables</li>
+                        </ul>
+                        <h2>Recepie</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae ipsa dolor.</p>
+                    </div>
+                    <div class="rightBox">
+                        <img src="food4.jfif" alt="FoodThali" >
+                    </div>
+                </section>
+                <!-- item2 -->
+                <section class="mainBox">
+                    <div class="leftBox">
+                        <h2>Burger</h2>
+                        <ul>
+                            <li>Chiken</li>
+                            <li>Bun</li>
+                            <li>Vagetables</li>
+                        </ul>
+                        <h2>Recepie</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae ipsa dolor.</p>
+                    </div>
+                    <div class="rightBox">
+                        <img src="Food2.jfif" alt="Burger" width="250px" height="200px">
+                    </div>
+                </section>
+                <!-- item3 -->
+                  </section>
+                <section class="mainBox">
+                    <div class="leftBox">
+                        <h2>Chiken Role</h2>
+                        <ul>
+                            <li>Chiken</li>
+                            <li>Paratha</li>
+                            <li>sauce</li>
+                        </ul>
+                        <h2>Recepie</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae ipsa dolor.</p>
+                    </div>
+                    <div class="rightBox">
+                        <img src="Food3.jfif" alt="ChickenrOLE" width="250px" height="200px">
+                    </div>
+                </section>
+                <!-- item4 -->
+                  <section class="mainBox">
+                    <div class="leftBox">
+                        <h2>Nuggets</h2>
+                        <ul>
+                            <li>Chiken</li>
+                            <li>Wings</li>
+                            <li>Strawberry</li>
+                        </ul>
+                        <h2>Recepie</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae ipsa dolor.</p>
+                    </div>
+                    <div class="rightBox">
+                        <img src="Food1.jfif" alt="wingsfires" width="250px" height="200px">
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <p>Copyright &copy; FoodWithFoody Pvt Ltd 2025</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
