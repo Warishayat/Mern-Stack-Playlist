@@ -1,0 +1,347 @@
+/* import inter font family */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Habibi&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* primary colors */
+
+:root {
+    --primary-color: #6366f1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-grey: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Habibi", serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 1.7rem;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+    gap: 1.5rem;
+    /* padding: 1rem; */
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    gap: 0.2rem;
+}
+
+.logo_image {
+    height: 5.875rem;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.logo_text {
+    cursor: pointer;
+}
+
+.nav {
+    display: none;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1140px) {
+    .nav {
+        display: flex;
+    }
+}
+
+.nav_link {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    transform: var(--link-color);
+}
+
+.nav_link:hover {
+    color: var(--link-color);
+}
+
+.contact_button {
+    display: none;
+    padding: 0.5rem 1.8rem;
+    border: 1px solid black;
+    border-radius: 0.3785rem;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    transform: all 0.1s;
+}
+
+@media screen and (min-width: 1140px) {
+    .contact_button {
+        display: flex;
+    }
+}
+
+.contact_button:hover {
+    background-color: #5254f8;
+}
+
+/* .menu_button{
+    
+} */
+.menu_icon {
+    display: none;
+    width: 1.5rem;
+    height: 1.4rem;
+    text-decoration: none;
+    border: 0px solid black;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1140px) {
+    .menu_icon {
+        display: block;
+        background-color: white;
+    }
+}
+
+.main_section {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    align-items: center;
+}
+
+.content_left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+    -webkit-animation: slideFromLeft 1s ease forwards;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+}
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.content_paragraph {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.content_heading {
+    font-size: 2.3rem;
+    padding: 0.5;
+    font-weight: 600;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-color);
+
+}
+
+.content_desc {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.button_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.start_tour {
+    padding: 0.5rem 1.8rem;
+    border: 1px solid black;
+    border-radius: 0.3785rem;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    transform: all 0.1s;
+    cursor: pointer;
+}
+
+.start_tour:hover {
+    background-color: #5254f8;
+}
+
+.take_tour {
+    padding: 0.5rem 1.8rem;
+    border: 1px solid black;
+    border-radius: 0.3785rem;
+    background-color: var(--dark-gray);
+    color: white;
+    transform: all 0.1s;
+    cursor: pointer;
+}
+
+.take_tour:hover {
+    background-color: var(--light-grey);
+    color: black;
+    font-size: 1rem;
+}
+
+.content_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_container {
+    border-radius: 0.67rem;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    height: 65vh;
+}
+
+.hero_image {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 1140px) {
+    .main_section {
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    .content_left {
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .content_heading {
+        max-width: 100%;
+        text-align: left;
+        margin: 0;
+
+    }
+
+    .button_group {
+        justify-content: start;
+        align-items: start;
+    }
+
+    .content_paragraph {
+        font-size: 0.9rem;
+    }
+
+    .content_desc {
+        font-size: 0.8rem;
+        /* color: var(--light-grey); */
+        color: var(--gray);
+        width: 80%;
+    }
+}
+
+.company_container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slideFromLeft 1s ease forwards;
+}
+
+.company_grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+    background-color: var(--light-grey);
+    border: none;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.company_logo {
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.svg_img {
+    height: 45px;
+    width: 40px;
+}
+
+.logo_text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1140px) {
+    .company_container{
+        width:100%;
+    }
+    .company_grid {
+        width:70vw;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        padding: 1rem;
+        background-color: var(--light-grey);
+        border: none;
+    }
+
+    .company_logo {
+        font-size: 0.7rem;
+        font-weight: 500;
+        gap: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .svg_img {
+        height: 30px;
+        width: 37px;
+    }
+
+    .logo_text {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+}
