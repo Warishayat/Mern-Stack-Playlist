@@ -1,0 +1,22 @@
+.usercard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+} 
+
+
+user-title{
+    font-size: 2rem;
+    color: red;
+    padding: 2px;
+    margin: 0.1px;
+}
+#user-image{
+    height:120px;
+}
+
+#user-desc{
+    padding: 2px;
+}
