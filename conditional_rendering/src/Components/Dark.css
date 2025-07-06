@@ -1,0 +1,16 @@
+.Dark-container {
+  background-color: #121212; /* dark background */
+  color: white;
+  height: 100vh; /* full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #1e1e1e; 
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+}
