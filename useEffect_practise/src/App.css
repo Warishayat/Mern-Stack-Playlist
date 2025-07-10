@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    overflow-x: hidden;
+}
+
+.DataFetch{
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

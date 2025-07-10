@@ -1,0 +1,23 @@
+.Data-loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+}
+.table-container{
+    padding: 1rem;
+    overflow-x: auto;
+    max-width: 100%;
+}
+.table{
+    border: 1px solid black;
+    padding: 0.3rem;
+    border-collapse: collapse;
+    text-align: start;
+    box-sizing: border-box;
+}
+.table tr td,
+.table tr th {
+  border: 1px solid black;
+  padding: 8px;
+}

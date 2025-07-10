@@ -20,8 +20,7 @@ const DataFetcer = () => {
           <h2>Data is fetching, please wait...</h2>
         ) : (
           <div>
-            <h3>Todo Title: {data.title}</h3>
-            <p>Completed: {data.completed ? 'Yes' : 'No'}</p>
+            <ul key={data.id}><li>{data.title}</li></ul>
           </div>
         )
       }
