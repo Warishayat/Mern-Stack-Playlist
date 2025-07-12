@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <h1>This is home page</h1>
-      <button onClick={()=>navigate("/<Login/>")}>Use Me</button>
+      <button onClick={()=>navigate("/contact")}>Use Me</button>
     </div>
   )
 }
