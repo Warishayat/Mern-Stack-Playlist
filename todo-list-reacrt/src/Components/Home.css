@@ -1,0 +1,24 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-section{
+    display: flex;
+    gap: 1rem;
+}
+.title{
+    padding: 0.3rem 1rem;
+    border: 1px solid black;
+}
+.btn{
+    padding: 0.3rem 1rem; 
+    cursor: pointer;
+}
+.textarea {
+    min-width: 700px;
+   padding-left: 10px;
+   padding-top: 10px;
+   padding-right: 10px;
+}

@@ -1,0 +1,44 @@
+.pastes-coantainer{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.search-bar{
+    border: 1px solid #000;
+    padding: 0.4rem 0.5rem;
+    
+    min-width: 500px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+
+.single-card{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+    min-width: 500px;
+    margin-bottom: 1rem;
+    max-width: 500px;        /* prevents stretching beyond 500px */
+    word-wrap: break-word;   /* forces long words to break */
+    overflow-wrap: break-word;
+    white-space: normal;     
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 1rem;
+}

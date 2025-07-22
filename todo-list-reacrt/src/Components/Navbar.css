@@ -1,0 +1,10 @@
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: antiquewhite;
+    margin-bottom: 12px;
+    
+}
