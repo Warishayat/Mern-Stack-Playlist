@@ -1,0 +1,133 @@
+/* Login.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login-Page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Form-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+}
+
+.Login-Tite {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 32px;
+  color: #333;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Email-label,
+.password {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.Email-type,
+.password-type {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: border 0.3s ease;
+}
+
+.Email-type:focus,
+.password-type:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #5a67d8;
+}
+
+/* ----------------------------- */
+/* 📱 Responsive Design Section  */
+/* ----------------------------- */
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .Form-section {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .Login-Tite {
+    font-size: 28px;
+  }
+
+  .button {
+    font-size: 15px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .Form-section {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .Login-Tite {
+    font-size: 24px;
+  }
+
+  .Email-type,
+  .password-type {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .Email-label,
+  .password {
+    font-size: 14px;
+  }
+}
