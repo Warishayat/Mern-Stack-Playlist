@@ -1,7 +1,7 @@
 import {initializeApp} from 'firebase/app'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDAJia6QJvMEGS04PuLZfMqPYr1l5a4ijI",
+  apiKey: "AIzaSyDAJia6QJvMEGS04PuLZfMqPYr1l5a4i*I",
   authDomain: "login-singup-fe14b.firebaseapp.com",
   projectId: "login-singup-fe14b",
   storageBucket: "login-singup-fe14b.firebasestorage.app",
