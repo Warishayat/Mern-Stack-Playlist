@@ -1,5 +1,3 @@
-/* Signup.css */
-
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .Signup-Page {
@@ -18,6 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin-top: 5rem;
+  overflow-x: hidden;
 }
 
 .Form-section {
@@ -86,12 +87,10 @@ label {
 .button:hover:not(:disabled) {
   background-color: #5a67d8;
 }
+.login-link{
+  margin-top: 8px;
+}
 
-/* ----------------------------- */
-/* 📱 Responsive Design Section  */
-/* ----------------------------- */
-
-/* Tablets */
 @media (max-width: 768px) {
   .Form-section {
     padding: 30px;

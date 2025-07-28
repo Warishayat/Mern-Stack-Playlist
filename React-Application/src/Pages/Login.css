@@ -10,6 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .Login-Page {
@@ -84,11 +85,9 @@ body {
   background-color: #5a67d8;
 }
 
-/* ----------------------------- */
-/* 📱 Responsive Design Section  */
-/* ----------------------------- */
-
-/* Medium screens (tablets) */
+.signup-page{
+  margin-top: 7px;
+}
 @media (max-width: 768px) {
   .Form-section {
     padding: 30px;
