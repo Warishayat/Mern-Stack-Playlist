@@ -37,9 +37,7 @@ app.use(express.json())  // 1 yea inbuilt middleware hae.
 // chaining bola jata hae mittar.
 
 
-// Route Specific Middleware 
-// suppose one route for /student and one for /admin is just for admin role lets make with
-// Middleware
+
 
 // const Logging = function (req,res,next){
 //     console.log("M logging karra hu");
