@@ -1,5 +1,7 @@
 const {Schema,model} = require("mongoose");
-const { type } = require("os");
+
+
+// define your schema
 
 const UserSchema = new Schema({
     name:{
@@ -9,18 +11,17 @@ const UserSchema = new Schema({
     email:{
         type:String,
         required:true,
-        unique:true
+        unique:true,
     },
     password:{
         type:String,
         required:true
     },
-    createdAt:{
+    created_at :{
         type:Date,
-        default: Date.now
+        default:Date.now
     }
 })
 
-// register with model
 const UserModel = model("User",UserSchema);
 module.exports = UserModel;
